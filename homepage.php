@@ -83,7 +83,7 @@ Explore our selection of modern apartments featuring sleek designs, convenient a
             <a href="apartments.php" class="unit-9">
               <div class="image" style="background-image: url('images/dorothea.webp');"></div>
               <div class="unit-9-content">
-                <h2>Dorothea</h2>
+                <h2>Dorosethea</h2>
                 <!-- <span>with Wendy Matos</span> -->
               </div>
             </a>
