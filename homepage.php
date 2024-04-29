@@ -58,8 +58,7 @@
           <h2>Property Information</h2>
           <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
           <ul class="property-list-details mb-5">
-            <li class="text-black">Property Name: <strong class="text-black">Dorothea Apartment</strong></li>
-            <li>Room: <strong>2</strong></li>
+            <li class="text-black">Property Name: <strong class="text-black">Dorothea Home</strong></li>
             <li>Total Area: <strong>480 Square Feets</strong></li>
             <li>Category: <strong>Modern House</strong></li>
             <li>Lunch Date: Jan 20, 2019<strong></strong></li>
@@ -73,9 +72,9 @@
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Browse Apartments</h2>
+            <h2 class="mb-5">Browse Homes</h2>
             <p>
-Explore our selection of modern apartments featuring sleek designs, convenient amenities, and prime locations. Find your ideal home amidst a range of floor plans tailored to your lifestyle needs.</p>
+Explore our selection of modern homes featuring sleek designs, convenient amenities, and prime locations. Find your ideal home amidst a range of floor plans tailored to your lifestyle needs.</p>
           </div>
         </div>
         <div class="row">
@@ -115,7 +114,7 @@ Explore our selection of modern apartments featuring sleek designs, convenient a
           </div>
 
           <div class="col-md-12 text-center mt-5" data-aos="fade-up">
-            <a href="apartments.php" class="btn btn-primary">Browse All Apartments</a>
+            <a href="apartments.php" class="btn btn-primary">Browse All Homes</a>
           </div>
         </div>
       </div>
@@ -129,7 +128,7 @@ Explore our selection of modern apartments featuring sleek designs, convenient a
 
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-            <h2 class="mb-5">Featured Apartments</h2>
+            <h2 class="mb-5">Featured Homes</h2>
             <p>Elevate your lifestyle in our vibrant community, complete with social spaces, resident events, and stunning views.</p>
           </div>
         </div>
