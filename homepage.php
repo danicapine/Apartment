@@ -38,13 +38,13 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover overlay" style="background-image: url('images/homebg.png');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url('images/bgg.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="mb-4">Excellent Space For Your Next Home</h1>
+            <h1 class="mb-4">Live Your Best Life in Our Spaces</h1>
             <p class="mb-5">ChurchSite Street, Masipit Calapan City, Oriental Mindoro</p>
-            <p><a href="apartments.php" class="btn btn-primary px-5 py-3">Take a Tour</a></p>
+            <p><a href="rooms.php" class="btn btn-primary px-5 py-3">Take a Tour</a></p>
           </div>
         </div>
       </div>
@@ -58,12 +58,12 @@
           <h2>Property Information</h2>
           <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
           <ul class="property-list-details mb-5">
-            <li class="text-black">Property Name: <strong class="text-black">Dorothea Home</strong></li>
+            <li class="text-black">Property Name: <strong class="text-black">Dorothea</strong></li>
             <li>Total Area: <strong>480 Square Feets</strong></li>
             <li>Category: <strong>Modern House</strong></li>
             <li>Lunch Date: Jan 20, 2019<strong></strong></li>
           </ul>
-          <p><a href="apartment-detail.php" class="btn btn-primary px-4 py-3">Get Details</a></p>
+          <p><a href="rooms.php" class="btn btn-primary px-4 py-3">Get Details</a></p>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Browse Homes</h2>
+            <h2 class="mb-5">Browse Rooms</h2>
             <p>
 Explore our selection of modern homes featuring sleek designs, convenient amenities, and prime locations. Find your ideal home amidst a range of floor plans tailored to your lifestyle needs.</p>
           </div>
@@ -90,7 +90,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <a href="apartments.php" class="unit-9">
-              <div class="image" style="background-image: url('images/betty.jpg');"></div>
+              <div class="image" style="background-image: url('images/bet.jpg);"></div>
               <div class="unit-9-content">
                 <h2>Betty</h2>
               </div>
@@ -114,7 +114,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
           </div>
 
           <div class="col-md-12 text-center mt-5" data-aos="fade-up">
-            <a href="apartments.php" class="btn btn-primary">Browse All Homes</a>
+            <a href="rooms.php" class="btn btn-primary">Browse All Rooms</a>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
 
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-            <h2 class="mb-5">Featured Homes</h2>
+            <h2 class="mb-5">Featured Rooms</h2>
             <p>Elevate your lifestyle in our vibrant community, complete with social spaces, resident events, and stunning views.</p>
           </div>
         </div>

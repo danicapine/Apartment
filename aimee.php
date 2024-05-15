@@ -41,12 +41,12 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/dorothea.webp');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/aimee.jpg');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-          <h1 class="text-white">Dorothea</h1>
+          <h1 class="text-white">Aimee</h1>
         </div>
       </div>
     </div>
@@ -54,16 +54,15 @@
 
   <div class="container">
       <div class="featured-property-half d-flex">
-        <div class="image" style="background-image: url('images/property.webp')"></div>
+        <div class="image" style="background-image: url('images/aroom5.jpg')"></div>
         <div class="text">
           <h2>Property Information</h2>
           <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
           <ul class="property-list-details mb-5">
-            <li class="text-black">Property Name: <strong class="text-black">Dorothea</strong></li>
+            <li class="text-black">Property Name: <strong class="text-black">Aimee</strong></li>
             <li>Total Area: <strong>480 Square Feets</strong></li>
             <li>Category: <strong>Modern House</strong></li>
             <li>Lunch Date: Jan 20, 2019<strong></strong></li>
-            
           </ul>
           <p><a href="login.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
@@ -77,37 +76,37 @@
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Presenting Dorothea</h2>
-            <p>Hey Dorothea, do you ever stop and think about me?</p>
+            <h2 class="mb-5">Presenting Aimee</h2>
+            <p>Thank you, Aimee.</p>
           </div>
         </div>
         <div class="row">
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom1.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom1.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom2.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom2.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom3.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom3.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom4.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
@@ -115,30 +114,30 @@
 
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/property.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom6.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom4.webp');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom7.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom5.jpg');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom9.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="dorothea.php" class="unit-9">
-              <div class="image" style="background-image: url('images/droom6.jpg');"></div>
+            <a href="aimee.php" class="unit-9">
+              <div class="image" style="background-image: url('images/aroom8.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
@@ -182,6 +181,6 @@
   <script src="js/circleaudioplayer.js"></script>
 
   <script src="js/main.js"></script>
-
+    
   </body>
 </html>

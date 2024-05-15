@@ -12,23 +12,13 @@
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
             <ul class="site-menu js-clone-nav d-none d-lg-block">
-              <li class="active">
-                <a href="homepage.php">Home</a>
-              </li>
-              <li><a href="aboutpage.php">About</a></li>
-              <li class="has-children">
-                <a href="apartments.php">Apartments</a>
-                <ul class="dropdown arrow-top">
-                  <li><a href="apartmentonly.php">Apartments</a></li>
-                  <li><a href="#">Rooms</a></li>
-                  <li class="has-children">
-                </ul>
-              </li>
-              <li><a href="contact.php">Contact</a></li>
-              <li><a href="login.php">Login</a></li>
-              <li><a href="signup.php">Signup</a></li>
-
-            </ul>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'homepage.php') echo 'class="active"'; ?>><a href="homepage.php">Home</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'aboutpage.php') echo 'class="active"'; ?>><a href="aboutpage.php">About</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'rooms.php') echo 'class="active"'; ?>><a href="rooms.php">Rooms</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'contact.php') echo 'class="active"'; ?>><a href="contact.php">Contact</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'login.php') echo 'class="active"'; ?>><a href="login.php">Login</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'signup.php') echo 'class="active"'; ?>><a href="signup.php">Signup</a></li>
+          </ul>
           </nav>
         </div>
       </div>

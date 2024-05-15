@@ -38,7 +38,7 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/homebg.png');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/bgg.jpg');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -85,7 +85,7 @@
   
               <h2 class="mb-2 font-weight-light h4">Ezeckiel Genteroy</h2>
               <span class="d-block mb-2 text-white-opacity-05">Co Founder</span>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+              <p class="mb-4">A visionary co-founder, fuels the growth with strategic insight and bold ideas.</p>
               <p>
                 <a href="https://www.facebook.com/profile.php?id=100082276090126" class="text-white p-2"><span class="icon-facebook"></span></a>
                 <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -105,7 +105,9 @@
   
               <h2 class="mb-2 font-weight-light h4">Danica Colobong</h2>
               <span class="d-block mb-2 text-white-opacity-05">Founder</span>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+              <p class="mb-4"><p class="mb-4">An inspiring founder, guides the team with clear vision and passion, paving the way for success.</p>
+</p>
+</p>
               <p>
                 <a href="https://www.facebook.com/halocade/" class="text-white p-2"><span class="icon-facebook"></span></a>
                 <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -125,7 +127,8 @@
   
               <h2 class="mb-2 font-weight-light h4">Tristan Dagoc</h2>
               <span class="d-block mb-2 text-white-opacity-05">Co Founder</span>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+              <p class="mb-4"><p class="mb-4">A creative co-founder, weaving innovation and passion into every aspect of the journey.</p>
+</p>
               <p>
                 <a href="https://www.facebook.com/prncsspoppy" class="text-white p-2"><span class="icon-facebook"></span></a>
                 <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -160,7 +163,7 @@
 
   <div class="row">
     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-      <h2 class="mb-5">Featured Apartments</h2>
+      <h2 class="mb-5">Featured Rooms</h2>
       <p>Elevate your lifestyle in our vibrant community, complete with social spaces, resident events, and stunning views.</p>
     </div>
   </div>
