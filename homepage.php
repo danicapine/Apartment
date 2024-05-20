@@ -79,7 +79,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <a href="apartments.php" class="unit-9">
+            <a href="dorothea.php" class="unit-9">
               <div class="image" style="background-image: url('images/dorothea.webp');"></div>
               <div class="unit-9-content">
                 <h2>Dorothea</h2>
@@ -89,15 +89,15 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <a href="apartments.php" class="unit-9">
-              <div class="image" style="background-image: url('images/bet.jpg);"></div>
+            <a href="betty.php" class="unit-9">
+              <div class="image" style="background-image: url('images/bet.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Betty</h2>
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="apartments.php" class="unit-9">
+            <a href="aimee.php" class="unit-9">
               <div class="image" style="background-image: url('images/aimee.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Aimee</h2>
@@ -105,7 +105,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
             </a>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <a href="apartments.php" class="unit-9">
+            <a href="cassandra.php" class="unit-9">
               <div class="image" style="background-image: url('images/cassandra.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Cassandra</h2>
