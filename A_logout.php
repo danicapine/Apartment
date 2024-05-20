@@ -73,7 +73,7 @@
         }
         ?>
         
-        <form method="post" action="logout.php">
+        <form method="post" action="A_logout.php">
             <p>Are you sure you want to logout?</p>
             <button type="submit" name="logout" value="yes">Yes</button>
             <button type="submit" name="logout" value="no">No</button>
