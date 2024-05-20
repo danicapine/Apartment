@@ -1,0 +1,241 @@
+:root {
+    --main-bg-color: #12151e;
+    --main-text-color: #ffffff;
+    --second-text-color: #edf1f6;
+    --second-bg-color: #16fda8;
+    --blue: #5E50F9;
+    --indigo: #6610f2;
+    --purple: #6a008a;
+    --pink: #E91E63;
+    --red: #f96868;
+    --orange: #f2a654;
+    --yellow: #f6e84e;
+    --green: #46c35f;
+    --teal: #58d8a3;
+    --cyan: #57c7d4;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #12151e;
+    --blue: #5E50F9;
+    --indigo: #6610f2;
+    --purple: #6a008a;
+    --pink: #E91E63;
+    --red: #f96868;
+    --orange: #f2a654;
+    --yellow: #f6e84e;
+    --green: #46c35f;
+    --teal: #58d8a3;
+    --cyan: #57c7d4;
+    --white: #ffffff;
+    --gray: #434a54;
+    --gray-light: #aab2bd;
+    --gray-lighter: #e8eff4;
+    --gray-lightest: #e6e9ed;
+    --black: #000000;
+    --primary: #0090e7;
+    --secondary: #e4eaec;
+    --success: #00d25b;
+    --info: #8f5fe8;
+    --warning: #ffab00;
+    --danger: #fc424a;
+    --light: #ffffff;
+    --dark: #0d0d0d;
+  }
+  h4{
+    margin-top: 10px;
+    color: var(--light);
+  }
+  
+  h3,p{
+    color:var(--light);
+  }
+  
+  #hhh{
+  color: var(--gray-light);
+  }
+  
+  .second-text1 {
+    color: var(--gray-lighter);
+  }
+  
+  #navbarDropdown:hover {
+    color: #00ff00;
+  }
+  
+  .primary-text1 {
+   color: var(--primary);
+  }
+  
+  .primary-text2 {
+    color: var(--warning);
+  }
+  
+  .primary-text3 {
+    color: var(--green);
+  }
+  
+  .primary-text4 {
+    color: var(--danger);
+  }
+  
+  .primary-text5 {
+    color: var(--primary);
+  }
+  
+  .primary-text6 {
+    color: var(--warning);
+  }
+  
+  .primary-text7 {
+    color: var(--green);
+  }
+  
+  .primary-text8 {
+    color: var(--danger);
+  }
+  
+  .primary-text11 {
+    color: var(--primary);
+   }
+   
+   .primary-text12 {
+     color: var(--warning);
+   }
+   
+   .primary-text13 {
+     color: var(--green);
+   }
+   
+   .primary-text14 {
+     color: var(--danger);
+   }
+  
+  .second-text {
+    color: var(--second-text-color);
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .secondary-bg {
+    background-color: var(--gray);
+  }
+  
+  .secondary-bg1 {
+    background-color: var(--light);
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  
+  .dashicon{
+    color: var(--gray-light);
+  }
+  
+  .dropdown-item {
+    color: var(--black);
+  }
+  
+  .dropdown-menu .nav-link {
+    color:var(--light);
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+    background-color: var(--dark);
+  }
+  
+  #nav{
+    color:var(--gray-light);
+  }
+  
+  body{
+    font-family:'Roboto', sans-serif;
+  }
+  
+  #sidebar-wrapper {
+    background-color: #12151e;
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+    color: var(--gray-lightest);
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+  }
+  
+  .list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+  
+  #box{
+    border-radius: 20px;
+  }
+  
+  /* Background of the box*/
+  #room{
+    background-color: var(--primary);
+  }
+  #tenant{
+    background-color: var(--warning);
+  }
+  #duedate{
+    background-color: var(--success);
+  }
+  #request{
+    background-color: var(--danger);
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
+  #navbarDropdown{
+     color:var(--gray-dark);
+  }
+  
+  
+  /* for table room*/
+  
