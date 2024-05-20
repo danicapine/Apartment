@@ -220,25 +220,16 @@ $rooms = fetchData($sql5);
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
-                                <i class="fas fa-user me-2" style="color: white"></i>
-                                <?php
-                                // Check if user_name session variable is set
-                                if (isset($_SESSION['user_name'])) {
-                                    echo $_SESSION['user_name'];
-                                } else {
-                                    // Default to a generic name if not set
-                                    echo "User";
-                                }
-                                ?>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </li>
+                                <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+                                    <i class="fas fa-user me-2" style="color: white"></i>Ezeck
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </li>
                     </ul>
                 </div>
             </nav>

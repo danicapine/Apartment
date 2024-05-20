@@ -3,7 +3,6 @@ include 'connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
-    $email = $_POST['email'];
     $user_type = 'tenant';
     $roomId = $_POST['roomId'];
     $rentStartDate = $_POST['rentStartDate'];
@@ -14,10 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = password_hash('defaultpassword', PASSWORD_BCRYPT);
 
     // Insert user
-    $sql = "INSERT INTO users (name, email, password, user_type) VALUES (:name, :email, :password, :user_type)";
+    $sql = "INSERT INTO users (name, password, user_type) VALUES (:name, :password, :user_type)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':email', $email);
     $stmt->bindParam(':password', $password);  // Bind the password
     $stmt->bindParam(':user_type', $user_type);
     $stmt->execute();
@@ -110,10 +108,6 @@ $rooms = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required style="border-radius: 18px">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required style="border-radius: 18px">
             </div>
             <div class="form-group">
                 <label for="roomId">Room</label>

@@ -2,7 +2,7 @@
 include 'connection.php';
 
 $id = $_GET['id'];
-$sql = "SELECT u.name, u.email, u.user_type, t.rentStartDate, t.address, t.phoneNumber, r.roomName 
+$sql = "SELECT u.name, u.user_type, t.rentStartDate, t.address, t.phoneNumber, r.roomName 
         FROM tenants t
         INNER JOIN users u ON t.userId = u.id
         INNER JOIN rooms r ON t.roomId = r.id
@@ -81,10 +81,6 @@ $tenant = $stmt->fetch(PDO::FETCH_ASSOC);
         <div class="form-group">
             <label>Name:</label>
             <input type="text" class="form-control" value="<?php echo $tenant['name']; ?>" readonly>
-        </div>
-        <div class="form-group">
-            <label>Email:</label>
-            <input type="email" class="form-control" value="<?php echo $tenant['email']; ?>" readonly>
         </div>
         <div class="form-group">
             <label>User Type:</label>

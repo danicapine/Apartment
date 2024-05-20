@@ -3,14 +3,21 @@
 session_start();
 
 if(isset($_POST['submit'])){
-    $email = $_POST['email'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Select user based on email
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = :email");
-    $stmt->bindParam(':email', $email);
+    // Check if the entered username and password match the default admin credentials
+    if($username === 'admin' && $password === 'admin'){
+        $_SESSION['admin_name'] = 'Admin';
+        header('Location: A_index.php');
+        exit();
+    }
+
+    // Prepare statement to select user based on username
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
+    $stmt->bindParam(':username', $username);
     $stmt->execute();
-    
+
     if($stmt->rowCount() > 0){
         $row = $stmt->fetch();
         $hashed_password = $row['password'];
@@ -19,16 +26,17 @@ if(isset($_POST['submit'])){
         if(password_verify($password, $hashed_password)){
             if($row['user_type'] == 'admin'){
                 $_SESSION['admin_name'] = $row['name'];
-                header('location:A_index.php');
+                header('Location: A_index.php');
             } elseif($row['user_type'] == 'user'){
                 $_SESSION['user_name'] = $row['name'];
-                header('location:user_interface.php');
+                header('Location: homepage.php');
             }
+            exit();
         } else {
-            $error[] = 'Incorrect email or password!';
+            $error[] = 'Incorrect username or password!';
         }
     } else {
-        $error[] = 'Incorrect email or password!';
+        $error[] = 'Incorrect username or password!';
     }
 }
 ?>
@@ -40,9 +48,8 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login Form</title>
-   <!-- Custom CSS file link -->
    <link rel="stylesheet" href="css/login_signup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Include Font Awesome CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <script>
       function togglePassword(fieldId, iconId) {
          var field = document.getElementById(fieldId);
@@ -84,12 +91,12 @@ if(isset($_POST['submit'])){
       <h3>Login Now</h3>
       <?php
       if(isset($error)){
-         foreach($error as $error){
-            echo '<span class="error-msg">'.$error.'</span>';
+         foreach($error as $err){
+            echo '<span class="error-msg">'.$err.'</span>';
          }
       }
       ?>
-      <input type="email" name="email" required placeholder="Enter your email">
+      <input type="text" name="username" required placeholder="Enter your username">
       <div class="password-container">
          <input type="password" id="password" name="password" required placeholder="Enter your password">
          <i class="fas fa-eye-slash" id="togglePassword" onclick="togglePassword('password', 'togglePassword')"></i>
@@ -100,4 +107,3 @@ if(isset($_POST['submit'])){
 </div>
 </body>
 </html>
-

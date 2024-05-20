@@ -2,7 +2,7 @@
 include 'connection.php';
 
 // Base query to select tenant information
-$query = "SELECT t.id, u.name, u.email, t.rentStartDate, t.address, t.phoneNumber, r.roomName 
+$query = "SELECT t.id, u.name, t.rentStartDate, t.address, t.phoneNumber, r.roomName 
           FROM tenants t
           INNER JOIN users u ON t.userId = u.id
           INNER JOIN rooms r ON t.roomId = r.id";
@@ -10,7 +10,7 @@ $query = "SELECT t.id, u.name, u.email, t.rentStartDate, t.address, t.phoneNumbe
 // Check if there is a search term and update the query accordingly
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 if (!empty($search)) {
-    $query .= " WHERE u.name LIKE '%$search%' OR u.email LIKE '%$search%' OR u.user_type LIKE '%$search%' OR t.address LIKE '%$search%' OR t.phoneNumber LIKE '%$search%' OR r.roomName LIKE '%$search%'";
+    $query .= " WHERE u.name LIKE '%$search%' OR u.user_type LIKE '%$search%' OR t.address LIKE '%$search%' OR t.phoneNumber LIKE '%$search%' OR r.roomName LIKE '%$search%'";
 }
 
 // Prepare and execute the query
@@ -200,7 +200,7 @@ $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="row my-5">
                 <h3 class="text-center mb-3 animated-heading">List of Tenants</h3>
                     <div class="header">
-                        <a href="tenants_create.php" class="btn btn-success" style="border-radius: 10px">Create Tenant</a>
+                        <a href="A_tenants_create.php" class="btn btn-success" style="border-radius: 10px">Create Tenant</a>
                         <div class="search-bar">
                             <form method="GET" action="A_tenant_info.php">
                                 <div class="input-group">
@@ -218,7 +218,6 @@ $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
-                                    <th>Email</th>
                                     <th>Room Name</th>
                                     <th>Rent Start Date</th>
                                     <th>Address</th>
@@ -231,7 +230,6 @@ $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <tr>
                                         <td><?php echo $tenant['id']; ?></td>
                                         <td><?php echo $tenant['name']; ?></td>
-                                        <td><?php echo $tenant['email']; ?></td>
                                         <td><?php echo $tenant['roomName']; ?></td>
                                         <td><?php echo $tenant['rentStartDate']; ?></td>
                                         <td><?php echo $tenant['address']; ?></td>

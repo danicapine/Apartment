@@ -4,17 +4,15 @@ include 'connection.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
     $name = $_POST['name'];
-    $email = $_POST['email'];
     $roomId = $_POST['roomId'];
     $rentStartDate = $_POST['rentStartDate'];
     $address = $_POST['address'];
     $phoneNumber = $_POST['phoneNumber'];
 
     // Update user
-    $sql = "UPDATE users SET name = :name, email = :email WHERE id = (SELECT userId FROM tenants WHERE id = :id)";
+    $sql = "UPDATE users SET name = :name, WHERE id = (SELECT userId FROM tenants WHERE id = :id)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':email', $email);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 
@@ -38,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $id = $_GET['id'];
 // Fetch tenant data
-$sql = "SELECT t.id, u.name, u.email, t.roomId, t.rentStartDate, t.address, t.phoneNumber
+$sql = "SELECT t.id, u.name, t.roomId, t.rentStartDate, t.address, t.phoneNumber
 FROM tenants t
 INNER JOIN users u ON t.userId = u.id
 WHERE t.id = :id";
@@ -129,10 +127,6 @@ if (!$tenant) {
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" value="<?php echo htmlspecialchars($tenant['name']); ?>" required style="border-radius: 18px">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($tenant['email']); ?>" required style="border-radius: 18px">
             </div>
             <div class="form-group">
                 <label for="roomId">Room</label>
