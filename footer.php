@@ -18,12 +18,15 @@ TTPD Homes offers modern living spaces designed for urban comfort. With stylish 
                 <ul class="list-unstyled">
                   <li><a href="homepage.php">Home</a></li>
                   <li><a href="rooms.php">Rooms</a></li>
+                  <li><a href="aboutpage.php">About Us</a></li>
+
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="aboutpage.php">About Us</a></li>
-                  <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="login.php">Log in</a></li>
+                <li><a href="signup.php">Sign up</a></li>
                 </ul>
               </div>
             </div>
