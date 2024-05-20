@@ -64,7 +64,7 @@
         if(isset($_POST['logout']) && $_POST['logout'] == 'no') {
             // User chose not to logout, redirect or display a message
             echo '<div class="message">Logout canceled. Redirecting...</div>';
-            header('refresh:1;url=index.php'); // Redirect to dashboard or any other page
+            header('refresh:1;url=A_index.php'); // Redirect to dashboard or any other page
             exit();
         }elseif(isset($_POST['logout']) && $_POST['logout'] == 'yes') {
             echo '<div class="message">Successful</div>';

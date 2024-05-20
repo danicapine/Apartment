@@ -47,7 +47,7 @@ if (isset($_GET['id'])) {
         $delete_stmt->execute();
     }
 
-    header("Location: A_recycle_bin.php");
+    header("Location: recycle_bin.php");
     exit();
 }
 ?>

@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
 
     // Check if the entered username and password match the default admin credentials
     if($username === 'admin' && $password === 'admin'){
-        $_SESSION['admin_name'] = 'Admin';
+        $_SESSION['username'] = 'Admin';
         header('Location: A_index.php');
         exit();
     }
@@ -24,11 +24,11 @@ if(isset($_POST['submit'])){
 
         // Verify password
         if(password_verify($password, $hashed_password)){
+            $_SESSION['username'] = $row['username']; // Store the username in the session
             if($row['user_type'] == 'admin'){
-                $_SESSION['admin_name'] = $row['name'];
+                $_SESSION['username'] = $row['username'];
                 header('Location: A_index.php');
             } elseif($row['user_type'] == 'user'){
-                $_SESSION['user_name'] = $row['name'];
                 header('Location: homepage.php');
             }
             exit();

@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+session_start();
 
 // Base query to select tenant information
 $query = "SELECT t.id, u.name, t.rentStartDate, t.address, t.phoneNumber, r.roomName 
@@ -17,6 +18,8 @@ if (!empty($search)) {
 $stmt = $conn->prepare($query);
 $stmt->execute();
 $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 ?>
 
 <!DOCTYPE html>
@@ -183,7 +186,7 @@ $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
-                                <i class="fas fa-user me-2" style="color: white"></i>Ezeck
+                                <i class="fas fa-user me-2" style="color: white"></i><?php echo htmlspecialchars($username); ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>

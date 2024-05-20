@@ -1,15 +1,13 @@
 <?php
+session_start();
+
 function fetchData($sql) {
     include 'connection.php';
 
     try {
-        // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
         $stmt = $conn->prepare($sql);
         $stmt->execute();
-
-        // Fetch all results for table display
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     } catch(PDOException $e) {
@@ -23,8 +21,7 @@ $sql1 = "SELECT COUNT(*) AS total_rooms FROM rooms";
 $sql2 = "SELECT COUNT(*) AS total_tenants FROM tenants";
 $sql3 = "SELECT COUNT(*) AS total_duedate FROM payments";
 $sql4 = "SELECT COUNT(*) AS total_requests FROM requests";
-$sql5 = "SELECT id, roomName, roomPrice, Status FROM rooms WHERE Status = 'Available'";
-
+$sql5 = "SELECT id, roomName, roomPrice, roomPicture, Status FROM rooms WHERE Status = 'Available'";
 
 $result1 = fetchData($sql1);
 $result2 = fetchData($sql2);
@@ -32,8 +29,8 @@ $result3 = fetchData($sql3);
 $result4 = fetchData($sql4);
 $rooms = fetchData($sql5);
 
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,17 +50,17 @@ $rooms = fetchData($sql5);
             margin-bottom: 20px;
         }
         table {
-            background-color: #FFFFFF; /* White background */
+            background-color: #FFFFFF;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
             padding: 10px;
             text-align: center;
         }
         th {
-            background-color: #FFFFFF; /* White background */
-            color: #000000; /* Black text */
+            background-color: #FFFFFF;
+            color: #000000;
         }
         body {
             background-color: #f8f9fa;
@@ -129,18 +126,16 @@ $rooms = fetchData($sql5);
         .animated-heading {
             animation: wave 2s ease-in-out infinite;
         }
-
         tbody tr:hover {
             background-color: #87CEEB;
             cursor: pointer;
-            transform: scale(1.01); /* Scale up the row on hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+            transform: scale(1.01);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .shadow-hover {
             position: relative;
             transition: all 0.3s ease;
         }
-
         .shadow-hover::before {
             content: '';
             position: absolute;
@@ -152,11 +147,9 @@ $rooms = fetchData($sql5);
             z-index: -1;
             transition: background-color 0.3s ease;
         }
-
         .shadow-hover:hover::before {
-            background-color: rgba(255, 255, 255, 0.5); /* I-adjust ang opacity kung kailangan */
+            background-color: rgba(255, 255, 255, 0.5);
         }
-
         .shadow-hover:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -220,16 +213,16 @@ $rooms = fetchData($sql5);
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
-                                    <i class="fas fa-user me-2" style="color: white"></i>Ezeck
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                            </li>
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+                                <i class="fas fa-user me-2" style="color: white"></i><?php echo htmlspecialchars($username); ?>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -302,7 +295,7 @@ $rooms = fetchData($sql5);
                 </div>
             </div>
 
-             <div class="container-fluid px-4">
+            <div class="container-fluid px-4">
                 <div class="row g-3 my-2"></div>
                 <div class="row my-5">
                 <h3 class="text-center mb-3 animated-heading">List of Rooms</h3>
@@ -313,7 +306,7 @@ $rooms = fetchData($sql5);
                     <div class="search-bar">
                     <form method="GET" action="A_rooms.php">
                             <div class="input-group">
-                                <input type="text" class="form-control" name="search" placeholder="Search..." value="<?php echo $search; ?>" style="border-top-left-radius: 18px; border-bottom-left-radius: 18px;">
+                                <input type="text" class="form-control" name="search" placeholder="Search..." value="<?php echo htmlspecialchars($search); ?>" style="border-top-left-radius: 18px; border-bottom-left-radius: 18px;">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="submit" style="border-top-right-radius: 18px; border-bottom-right-radius: 18px;"><i class="fas fa-search"></i></button>
                                 </div>
@@ -340,21 +333,19 @@ $rooms = fetchData($sql5);
                                     <td><?php echo $room['roomPrice']; ?></td>
                                     <td>
                                         <?php if (!empty($room['roomPicture'])): ?>
-                                            <img src="<?php echo $room['roomPicture']; ?>" alt="Room Image" style="width: 100px; height: auto;">
+                                            <img src="<?php echo htmlspecialchars($room['roomPicture']); ?>" alt="Room Image" style="width: 100px; height: auto;">
                                         <?php else: ?>
                                             <span>No Image Available</span>
                                         <?php endif; ?>
                                     </td>
-                                    <td><?php echo $room['Status']?></td>
+                                    <td><?php echo $room['Status']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
-
+            </div>
         </div>
-    </div>
-    <!-- /#page-content-wrapper -->
     </div>
 
     <!-- JS CDN Link -->

@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+session_start();
 
 // Base query to select tenant information
 $query = "SELECT p.id, u.name, r.roomName, p.paymentDueDate, p.paymentAmount, p.paymentStatus
@@ -17,6 +18,8 @@ if (!empty($search)) {
 $stmt = $conn->prepare($query);
 $stmt->execute();
 $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 ?>
 
 <!DOCTYPE html>
@@ -179,7 +182,7 @@ $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
-                                <i class="fas fa-user me-2" style="color: white"></i>Ezeck
+                                <i class="fas fa-user me-2" style="color: white"></i><?php echo htmlspecialchars($username); ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -196,7 +199,7 @@ $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="row my-5">
                 <h3 class="text-center mb-3 animated-heading">List of Payments</h3>
                     <div class="header">
-                        <a href="payments_create.php" class="btn btn-success" style="border-radius: 10px">Manual Payment</a>
+                        <a href="A_payments_create.php" class="btn btn-success" style="border-radius: 10px">Manual Payment</a>
                         <div class="search-bar">
                             <form method="GET" action="A_payments.php">
                                 <div class="input-group">
