@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $delete_stmt->bindValue(':id', $id, PDO::PARAM_INT);
     $delete_stmt->execute();
 
-    header("Location: recycle_bin.php");
+    header("Location: A_recycle_bin.php");
     exit();
 }
 ?>

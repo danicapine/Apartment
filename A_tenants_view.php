@@ -106,7 +106,7 @@ $tenant = $stmt->fetch(PDO::FETCH_ASSOC);
             <label>Phone Number:</label>
             <input type="text" class="form-control" value="<?php echo $tenant['phoneNumber']; ?>" readonly>
         </div>
-        <a href="tenant_info.php" class="btn btn-primary">Back to List</a>
+        <a href="A_tenant_info.php" class="btn btn-primary">Back to List</a>
     </div>
 </body>
 </html>

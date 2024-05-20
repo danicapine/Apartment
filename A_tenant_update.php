@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $stmt->execute();
 
     if ($result) {
-        header("Location: tenant_info.php?msg=Updated successfully");
+        header("Location: A_tenant_info.php?msg=Updated successfully");
         exit; // Important to stop further execution of the script after redirection
     } else {
         echo "Failed: " . $stmt->errorInfo()[2]; // Show error message if there's a query error
@@ -158,7 +158,7 @@ if (!$tenant) {
                 <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" value="<?php echo htmlspecialchars($tenant['phoneNumber']); ?>" required style="border-radius: 18px">
             </div>
             <button type="submit" class="btn btn-primary" style="border-radius: 18px; padding-left:40px; padding-right:40px">Update</button>
-            <a href="tenant_info.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
+            <a href="A_tenant_info.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
         </form>
     </div>
 </body>
