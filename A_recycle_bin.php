@@ -277,7 +277,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 
         function restoreData(id) {
             const xhr = new XMLHttpRequest();
-            xhr.open('GET', 'restore.php?id=' + id, true);
+            xhr.open('GET', 'A_restore.php?id=' + id, true);
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     window.location.reload();
@@ -293,7 +293,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 
         function permanentlyDeleteData(id) {
             const xhr = new XMLHttpRequest();
-            xhr.open('GET', 'permanent_delete.php?id=' + id, true);
+            xhr.open('GET', 'A_permanent_delete.php?id=' + id, true);
             xhr.onload = function() {
                 if(xhr.status === 200) {
                     window.location.reload();
