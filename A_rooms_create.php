@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':status', $status);
     $stmt->execute();
 
-    header('Location: rooms.php');
+    header('Location: A_rooms.php');
     exit;
 }
 ?>
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </select>
             </div>
             <button type="submit" class="btn btn-primary" style="border-radius: 18px; padding-left:40px; padding-right:40px">Create</button>
-            <a href="rooms.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
+            <a href="A_rooms.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
         </form>
     </div>
 </body>

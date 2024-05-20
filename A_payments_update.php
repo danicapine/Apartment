@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 
-    header('Location: payments.php');
+    header('Location: A_payments.php');
     exit;
 }
 
@@ -143,7 +143,7 @@ if (!$payment) {
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Update Payment</button>
-            <a href="payments.php" class="btn btn-secondary">Cancel</a>
+            <a href="A_payments.php" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </body>

@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 
-    header('Location: rooms.php');
+    header('Location: A_rooms.php');
     exit;
 }
 
@@ -162,7 +162,7 @@ $room = $stmt->fetch(PDO::FETCH_ASSOC);
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Update</button>
-                <a href="rooms.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
+                <a href="A_rooms.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
             </div>
         </form>
     </div>

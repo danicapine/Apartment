@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
         $delete_stmt->execute();
     }
 
-    header("Location: tenant_info.php");
+    header("Location: A_tenant_info.php");
     exit();
 }    
 ?>

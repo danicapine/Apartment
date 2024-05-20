@@ -97,7 +97,7 @@ $payment = $stmt->fetch(PDO::FETCH_ASSOC); // Changed variable name from $paymen
             <label>Status</label>
             <input type="text" class="form-control" value="<?php echo $payment['paymentStatus']; ?>" readonly>
         </div>
-        <a href="payments.php" class="btn btn-primary">Back to List</a>
+        <a href="A_payments.php" class="btn btn-primary">Back to List</a>
     </div>
 </body>
 </html>

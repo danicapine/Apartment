@@ -86,7 +86,7 @@ $recycle_bin = $stmt->fetch(PDO::FETCH_ASSOC);
             <label>Archive data</label>
             <input type="text" class="form-control"  value="<?php echo isset($recycle_bin['archived_data']) ? $recycle_bin['archived_data'] : ''; ?>" readonly>
         </div>
-        <a href="recycle_bin.php" class="btn btn-primary">Back to List</a>
+        <a href="A_recycle_bin.php" class="btn btn-primary">Back to List</a>
     </div>
 </body>
 </html>

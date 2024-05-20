@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
         $delete_stmt->execute();
     }
 
-    header("Location: payments.php");
+    header("Location: A_payments.php");
     exit();
 }
 ?>

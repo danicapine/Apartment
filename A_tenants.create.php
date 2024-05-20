@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute();
 
     if ($stmt) {
-        header("Location: tenant_info.php?msg=New record created successfully");
+        header("Location: A_tenant_info.php?msg=New record created successfully");
         exit; // Mahalaga ang paglagay ng exit o die dito para itigil ang pagproseso ng script pagkatapos ng redirect
     } else {
         echo "Failed: " . $stmt->errorInfo()[2]; // Kung may error sa query, ito ang ipapakita
@@ -137,7 +137,7 @@ $rooms = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required style="border-radius: 18px">
             </div>
             <button type="submit" class="btn btn-primary" style="border-radius: 18px; padding-left:40px; padding-right:40px">Create</button>
-            <a href="tenant_info.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
+            <a href="A_tenant_info.php" class="btn btn-secondary" style="border-radius: 18px; padding-left:30px; padding-right:30px">Cancel</a>
         </form>
     </div>
 </body>

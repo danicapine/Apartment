@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
     $delete_stmt = $conn->prepare("DELETE FROM rooms WHERE id = :id");
     $delete_stmt->execute(['id' => $id]);
 
-    header("Location: rooms.php");
+    header("Location: A_rooms.php");
     exit();
 }
 ?>

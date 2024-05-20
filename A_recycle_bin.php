@@ -137,28 +137,28 @@ $archived_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="list-group list-group-flush my-3">
             <li class="nav-item nav-category">
             <span class="nav-link" id="nav">Navigation</span>
-                <a href="index.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_index.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fas fa-home fs-6 primary-text1 rounded-full secondary-bg p-1"></i> Dashboard
                 </a>
-                <a href="tenant_info.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_tenant_info.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fas fa-info-circle fs-6 primary-text2 rounded-full secondary-bg p-1"></i> Tenant's Info
                 </a>
-                <a href="rooms.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_rooms.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fas fa-warehouse fs-6 primary-text3 rounded-full secondary-bg p-1"></i> Rooms
                 </a>
-                <a href="payments.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_payments.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fa-solid fa-credit-card fs-6 primary-text4 rounded-full secondary-bg p-1"></i> Payments
                 </a>
-                <a href="edit.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_edit.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fa-regular fa-pen-to-square fs-6 primary-text5 rounded-full secondary-bg p-1"></i> Edit
                 </a>
-                <a href="concern.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_concern.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fa-regular fa-comment-dots fs-6 primary-text6 rounded-full secondary-bg p-1"></i> Concern/Request
                 </a>
-                <a href="recycle_bin.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <a href="A_recycle_bin.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <i class="fa-solid fa-recycle fs-6 primary-text8 rounded-full secondary-bg p-1"></i> Recycle Bin
                 </a>
-                <a href="logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+                <a href="A_logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
                     <i class="fas fa-power-off me-2"></i> Logout
                 </a>
             </div>
@@ -201,7 +201,7 @@ $archived_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <h3 class="text-center mb-3 animated-heading">List of Deleted data</h3>
                 <div class="header">
                     <div class="search-bar">
-                        <form method="GET" action="recycle_bin.php">
+                        <form method="GET" action="A_recycle_bin.php">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="<?php echo htmlspecialchars($search); ?>" style="border-top-left-radius: 18px; border-bottom-left-radius: 18px;">
                                 <div class="input-group-append">
@@ -230,7 +230,7 @@ $archived_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <td><?php echo htmlspecialchars($data['archived_table']); ?></td>
                                     <td><?php echo htmlspecialchars($data['archived_data']); ?></td>
                                     <td>
-                                        <a href="recyclebin_view.php?id=<?php echo $data['id']; ?>" class="btn btn-info btn-sm mr-2" style="border-radius: 18px">
+                                        <a href="A_recyclebin_view.php?id=<?php echo $data['id']; ?>" class="btn btn-info btn-sm mr-2" style="border-radius: 18px">
                                             <i class="fas fa-eye"></i> <!-- Font Awesome icon for view -->
                                         </a>
                                         <button class="btn btn-success btn-restore"  data-id="<?php echo htmlspecialchars($data['id']); ?>" style="border-radius: 18px">

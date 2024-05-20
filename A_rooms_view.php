@@ -100,7 +100,7 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
         </div>
-        <a href="rooms.php" class="btn btn-primary">Back to List</a>
+        <a href="A_rooms.php" class="btn btn-primary">Back to List</a>
     </div>
 </body>
 </html>

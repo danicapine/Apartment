@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bindParam(':paymentStatus', $paymentStatus);
         $stmt->execute();
 
-        header('Location: payments.php');
+        header('Location: A_payments.php');
         exit;
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
@@ -139,7 +139,7 @@ $rooms = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Create Payment</button>
-            <a href="payments.php" class="btn btn-secondary">Cancel</a>
+            <a href="A_payments.php" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </body>
