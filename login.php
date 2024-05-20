@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
         if(password_verify($password, $hashed_password)){
             if($row['user_type'] == 'admin'){
                 $_SESSION['admin_name'] = $row['name'];
-                header('location:index.php');
+                header('location:A_index.php');
             } elseif($row['user_type'] == 'user'){
                 $_SESSION['user_name'] = $row['name'];
                 header('location:user_interface.php');
