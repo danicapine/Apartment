@@ -196,7 +196,7 @@
       </div>
     </div>
 
-    <?php include('footer.php'); ?>
+    <?php include('footer2.php'); ?>
     
   </div>
 

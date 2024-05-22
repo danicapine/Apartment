@@ -177,7 +177,7 @@
     </div>
 
     
-    <?php include('footer.php'); ?>
+    <?php include('footer2.php'); ?>
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>

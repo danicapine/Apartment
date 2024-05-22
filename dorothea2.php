@@ -78,7 +78,7 @@
                 <li><strong>Wifi</strong></li>
                 <li><strong>Appliances</strong></li>
           </ul>
-          <p><a href="payment.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+          <p><a href="pay_method.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>
@@ -174,7 +174,7 @@
     </div>
 
     
-    <?php include('footer.php'); ?>
+    <?php include('footer2.php'); ?>
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
