@@ -30,7 +30,7 @@
   
     
   
-  <?php include('header.php'); ?>
+  <?php include('mainheader.php'); ?>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -41,12 +41,12 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/lucy.jpg');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/dorothea.webp');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-          <h1 class="text-white">Lucy</h1>
+          <h1 class="text-white">Dorothea</h1>
         </div>
       </div>
     </div>
@@ -54,12 +54,12 @@
 
   <div class="container">
       <div class="featured-property-half d-flex">
-        <div class="image" style="background-image: url('images/lp.png')"></div>
+        <div class="image" style="background-image: url('images/property.webp')"></div>
         <div class="text">
         <h2>Property Information</h2>
             <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
             <ul class="property-list-details mb-5">
-                <li class="text-black">Property Name: <strong class="text-black">Lucy</strong></li>
+                <li class="text-black">Property Name: <strong class="text-black">Dorothea</strong></li>
                 <li>Total Area: <strong>480 Square Feet</strong></li>
                 <li>Category: <strong>Modern House</strong></li>
                 <li>Price: <strong>₱50,000 per month</strong></li>
@@ -78,49 +78,46 @@
                 <li><strong>Wifi</strong></li>
                 <li><strong>Appliances</strong></li>
           </ul>
-          <p><a href="login.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+          <p><a href="payment.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>
-
-
-
     
     <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Presenting Lucy</h2>
-            <p>But you told Lucy you'd kill yourself if I ever leave.</p>
+            <h2 class="mb-5">Presenting Dorothea</h2>
+            <p>Hey Dorothea, do you ever stop and think about me?</p>
           </div>
         </div>
         <div class="row">
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr1.jpg');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr2.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom1.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr8.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom2.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr3.jpg');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom3.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
@@ -128,30 +125,30 @@
 
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr4.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/property.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr5.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom4.webp');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr6.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom5.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr7.png');"></div>
+            <a href="dorothea.php" class="unit-9">
+              <div class="image" style="background-image: url('images/droom6.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
@@ -166,12 +163,12 @@
     <div class="bg-primary" data-aos="fade">
       <div class="container">
         <div class="row">
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
-          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
         </div>
       </div>
     </div>
@@ -195,6 +192,6 @@
   <script src="js/circleaudioplayer.js"></script>
 
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>

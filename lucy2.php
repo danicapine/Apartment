@@ -30,7 +30,7 @@
   
     
   
-  <?php include('header.php'); ?>
+  <?php include('mainheader.php'); ?>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -78,7 +78,7 @@
                 <li><strong>Wifi</strong></li>
                 <li><strong>Appliances</strong></li>
           </ul>
-          <p><a href="login.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+          <p><a href="payment.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>

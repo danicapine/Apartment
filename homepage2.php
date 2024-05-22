@@ -27,7 +27,7 @@
   </head>
   <body>
 
-    <?php include('header.php'); ?>
+    <?php include('mainheader.php'); ?>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -44,7 +44,7 @@
           <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
             <h1 class="mb-4">Live Your Best Life in Our Spaces</h1>
             <p class="mb-5">ChurchSite Street, Masipit Calapan City, Oriental Mindoro</p>
-            <p><a href="rooms.php" class="btn btn-primary px-5 py-3">Take a Tour</a></p>
+            <p><a href="rooms2.php" class="btn btn-primary px-5 py-3">Take a Tour</a></p>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
             <li>Category: <strong>Modern House</strong></li>
             <li>Lunch Date: Jan 20, 2019<strong></strong></li>
           </ul>
-          <p><a href="rooms.php" class="btn btn-primary px-4 py-3">Get More Details</a></p>
+          <p><a href="rooms2.php" class="btn btn-primary px-4 py-3">Get More Details</a></p>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <a href="dorothea.php" class="unit-9">
+            <a href="dorothea2.php" class="unit-9">
               <div class="image" style="background-image: url('images/dorothea.webp');"></div>
               <div class="unit-9-content">
                 <h2>Dorothea</h2>
@@ -89,7 +89,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <a href="betty.php" class="unit-9">
+            <a href="betty2.php" class="unit-9">
               <div class="image" style="background-image: url('images/bet.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Betty</h2>
@@ -97,7 +97,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
             </a>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="aimee.php" class="unit-9">
+            <a href="aimee2.php" class="unit-9">
               <div class="image" style="background-image: url('images/aimee.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Aimee</h2>
@@ -105,7 +105,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
             </a>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <a href="cassandra.php" class="unit-9">
+            <a href="cassandra2.php" class="unit-9">
               <div class="image" style="background-image: url('images/cassandra.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Cassandra</h2>
@@ -114,7 +114,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
           </div>
 
           <div class="col-md-12 text-center mt-5" data-aos="fade-up">
-            <a href="rooms.php" class="btn btn-primary">Browse All Rooms</a>
+            <a href="rooms2.php" class="btn btn-primary">Browse All Rooms</a>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
         
         <div class="site-block-retro d-block d-md-flex">
 
-          <a href="apartments.php" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
+          <a href="dorothea2.php" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
             <div class="image" style="background-image: url('images/dorothea.webp');"></div>
             <div class="unit-9-content">
               <h2>Dorothea</h2>
@@ -144,14 +144,14 @@ Explore our selection of modern homes featuring sleek designs, convenient amenit
 
           <div class="col2 ml-auto">
 
-            <a href="apartments.php" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
+            <a href="aimee2.php" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
               <div class="image" style="background-image: url('images/aimee.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Aimee</h2>
               </div>
             </a>
 
-            <a href="apartments.php" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
+            <a href="cassandra2.php" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
               <div class="image" style="background-image: url('images/cassandra.jpg');"></div>
               <div class="unit-9-content">
                 <h2>Cassandra</h2>

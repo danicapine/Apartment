@@ -56,13 +56,27 @@
       <div class="featured-property-half d-flex">
         <div class="image" style="background-image: url('images/aroom5.jpg')"></div>
         <div class="text">
-          <h2>Property Information</h2>
-          <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
-          <ul class="property-list-details mb-5">
-            <li class="text-black">Property Name: <strong class="text-black">Aimee</strong></li>
-            <li>Total Area: <strong>480 Square Feets</strong></li>
-            <li>Category: <strong>Modern House</strong></li>
-            <li>Lunch Date: Jan 20, 2019<strong></strong></li>
+        <h2>Property Information</h2>
+            <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
+            <ul class="property-list-details mb-5">
+                <li class="text-black">Property Name: <strong class="text-black">Aimee</strong></li>
+                <li>Total Area: <strong>480 Square Feet</strong></li>
+                <li>Category: <strong>Modern House</strong></li>
+                <li>Price: <strong>₱50,000 per month</strong></li>
+                <li>Features:</li>
+                <li><strong>1 Bedroom Area</strong> 
+                    <ul>
+                        <li>Master Bedroom: 1 queen size bed</li>
+                    </ul>
+                </li>
+                <li><strong>1 Living Area</strong></li>
+                <li><strong>1 Modern Kitchen</strong></li>
+                <li><strong>1 Modern Bathroom</strong></li>
+                <li>Facilities:</li>
+                <li><strong>Water</strong></li>
+                <li><strong>Electricity</strong></li>
+                <li><strong>Wifi</strong></li>
+                <li><strong>Appliances</strong></li>
           </ul>
           <p><a href="login.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
@@ -152,12 +166,12 @@
     <div class="bg-primary" data-aos="fade">
       <div class="container">
         <div class="row">
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
+          <a class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
         </div>
       </div>
     </div>

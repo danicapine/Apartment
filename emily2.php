@@ -30,7 +30,7 @@
   
     
   
-  <?php include('header.php'); ?>
+  <?php include('mainheader.php'); ?>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -41,12 +41,12 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/lucy.jpg');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/emily.jpg');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-          <h1 class="text-white">Lucy</h1>
+          <h1 class="text-white">Emily</h1>
         </div>
       </div>
     </div>
@@ -54,19 +54,20 @@
 
   <div class="container">
       <div class="featured-property-half d-flex">
-        <div class="image" style="background-image: url('images/lp.png')"></div>
+        <div class="image" style="background-image: url('images/erp1.jpg')"></div>
         <div class="text">
         <h2>Property Information</h2>
             <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
             <ul class="property-list-details mb-5">
-                <li class="text-black">Property Name: <strong class="text-black">Lucy</strong></li>
-                <li>Total Area: <strong>480 Square Feet</strong></li>
+                <li class="text-black">Property Name: <strong class="text-black">Emily</strong></li>
+                <li>Total Area: <strong>680 Square Feet</strong></li>
                 <li>Category: <strong>Modern House</strong></li>
-                <li>Price: <strong>₱50,000 per month</strong></li>
+                <li>Price: <strong>₱100,000 per month</strong></li>
                 <li>Features:</li>
-                <li><strong>1 Bedroom Area</strong> 
+                <li><strong>2 Bedroom Areas</strong> 
                     <ul>
-                        <li>Master Bedroom: 1 queen size bed</li>
+                        <li>Master Bedroom: 1 queen size bed (for parents)</li>
+                        <li>Kids' Bedroom: 2 children's beds</li>
                     </ul>
                 </li>
                 <li><strong>1 Living Area</strong></li>
@@ -77,8 +78,8 @@
                 <li><strong>Electricity</strong></li>
                 <li><strong>Wifi</strong></li>
                 <li><strong>Appliances</strong></li>
-          </ul>
-          <p><a href="login.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+            </ul>
+          <p><a href="payment.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>
@@ -90,37 +91,37 @@
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Presenting Lucy</h2>
-            <p>But you told Lucy you'd kill yourself if I ever leave.</p>
+            <h2 class="mb-5">Presenting Emily</h2>
+            <p>Emily opens her eyes.</p>
           </div>
         </div>
         <div class="row">
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr1.jpg');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er1.jpg');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr2.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er2.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr8.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er3.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr3.jpg');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er4.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
@@ -128,30 +129,30 @@
 
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr4.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er5.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr5.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er6.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr6.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er7.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="lucy.php" class="unit-9">
-              <div class="image" style="background-image: url('images/lr7.png');"></div>
+            <a href="emily.php" class="unit-9">
+              <div class="image" style="background-image: url('images/er8.png');"></div>
               <div class="unit-9-content">
               </div>
             </a>

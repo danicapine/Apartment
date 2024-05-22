@@ -26,10 +26,9 @@ if(isset($_POST['submit'])){
         if(password_verify($password, $hashed_password)){
             $_SESSION['username'] = $row['username']; // Store the username in the session
             if($row['user_type'] == 'admin'){
-                $_SESSION['username'] = $row['username'];
                 header('Location: A_index.php');
             } elseif($row['user_type'] == 'user'){
-                header('Location: homepage.php');
+                header('Location: homepage2.php');
             }
             exit();
         } else {
@@ -88,7 +87,7 @@ if(isset($_POST['submit'])){
 <body>
 <div class="form-container">
    <form action="" method="post">
-      <h3>Login Now</h3>
+      <h3>Login</h3>
       <?php
       if(isset($error)){
          foreach($error as $err){
@@ -96,14 +95,15 @@ if(isset($_POST['submit'])){
          }
       }
       ?>
-      <input type="text" name="username" required placeholder="Enter your username">
+      <input type="text" name="username" required placeholder="Username">
       <div class="password-container">
-         <input type="password" id="password" name="password" required placeholder="Enter your password">
+         <input type="password" id="password" name="password" required placeholder="Password">
          <i class="fas fa-eye-slash" id="togglePassword" onclick="togglePassword('password', 'togglePassword')"></i>
       </div>
-      <input type="submit" name="submit" value="Login Now" class="form-btn">
-      <p>Don't have an account? <a href="signup.php">Register Now</a></p>
+      <input type="submit" name="submit" value="Login" class="form-btn">
+      <p>Don't have an account? <a href="signup.php">Register</a></p>
    </form>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

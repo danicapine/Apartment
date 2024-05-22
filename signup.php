@@ -103,20 +103,19 @@ if (isset($_POST['submit'])) {
          }
       }
       ?>
-      <input type="text" name="name" required placeholder="Enter your name" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES) : ''; ?>">
-      <input type="text" name="username" required placeholder="Enter your email" value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username'], ENT_QUOTES) : ''; ?>">
+      <input type="text" name="name" required placeholder="Full Name" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES) : ''; ?>">
+      <input type="text" name="username" required placeholder="Username" value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username'], ENT_QUOTES) : ''; ?>">
       <div class="password-container">
-         <input type="password" id="password" name="password" required placeholder="Enter your password" value="<?php echo isset($_POST['password']) ? htmlspecialchars($_POST['password'], ENT_QUOTES) : ''; ?>">
+         <input type="password" id="password" name="password" required placeholder="Password" value="<?php echo isset($_POST['password']) ? htmlspecialchars($_POST['password'], ENT_QUOTES) : ''; ?>">
          <i class="fas fa-eye-slash" id="togglePassword" onclick="togglePassword('password', 'togglePassword')"></i>
       </div>
       <div class="password-container">
-         <input type="password" id="cpassword" name="cpassword" required placeholder="Confirm your password" value="<?php echo isset($_POST['cpassword']) ? htmlspecialchars($_POST['cpassword'], ENT_QUOTES) : ''; ?>">
+         <input type="password" id="cpassword" name="cpassword" required placeholder="Confirm Password" value="<?php echo isset($_POST['cpassword']) ? htmlspecialchars($_POST['cpassword'], ENT_QUOTES) : ''; ?>">
          <i class="fas fa-eye-slash" id="toggleCPassword" onclick="togglePassword('cpassword', 'toggleCPassword')"></i>
       </div>
-      <input type="submit" name="submit" value="Register Now" class="form-btn">
-      <p>Already have an account? <a href="login.php">Login Now</a></p>
+      <input type="submit" name="submit" value="Register" class="form-btn">
+      <p>Already have an account? <a href="login.php">Login</a></p>
    </form>    
 </div>
 </body>
 </html>
-
