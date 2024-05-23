@@ -3,18 +3,10 @@ include 'connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
-    $name = $_POST['name'];
     $roomName = $_POST['roomName'];
     $paymentDueDate = $_POST['paymentDueDate'];
     $paymentAmount = $_POST['paymentAmount'];
     $paymentStatus = $_POST['paymentStatus'];
-
-    // Update user
-    $sql = "UPDATE users SET name = :name WHERE id = (SELECT userId FROM payments WHERE id = :id)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':id', $id);
-    $stmt->execute();
 
     // Update rooms
     $sql = "UPDATE rooms SET roomName = :roomName WHERE id = (SELECT roomId FROM payments WHERE id = :id)";
@@ -38,9 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $id = $_GET['id'];
 // Fetch payments data
-$sql = "SELECT p.id, u.name AS name, r.roomName, p.paymentDueDate, p.paymentAmount, p.paymentStatus
+$sql = "SELECT p.id, r.roomName, p.paymentDueDate, p.paymentAmount, p.paymentStatus
 FROM payments p
-INNER JOIN users u ON p.userId = u.id
 INNER JOIN rooms r ON p.roomId = r.id
 WHERE p.id = :id";
 $stmt = $conn->prepare($sql);
@@ -119,10 +110,6 @@ if (!$payment) {
         <h3>Update Payment</h3>
         <form method="post">
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($payment['id']); ?>">
-            <div class="form-group">
-                <label for="name">User Name</label>
-                <input type="text" class="form-control" id="name" name="name" value="<?php echo htmlspecialchars($payment['name']); ?>" required>
-            </div>
             <div class="form-group">
                 <label for="roomName">Room Name</label>
                 <input type="text" class="form-control" id="roomName" name="roomName" value="<?php echo htmlspecialchars($payment['roomName']); ?>" required>

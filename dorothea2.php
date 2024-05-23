@@ -19,16 +19,36 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
     
-  
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
     
   </head>
   <body>
-
   
-    
+  <?php
+  // Include your database connection file
+  include('connection.php');
+
+  // Check if the rent button was clicked
+  if (isset($_GET['rent']) && isset($_GET['id'])) {
+      $id = $_GET['id'];
+
+      // Prepare the SQL statement to prevent SQL injection
+      $stmt = $conn->prepare("SELECT Status FROM rooms WHERE id = :id");
+      $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+      $stmt->execute();
+      $status = $stmt->fetchColumn();
+
+      if ($status == 'Available') {
+          // Redirect to pay_method.php
+          header("Location: pay_method.php");
+          exit();
+      } else {
+          // Display an error message
+          echo "<script>alert('Sorry, this room is currently occupied. Please select a different room.'); window.location.href='dorothea2.php';</script>";
+      }
+  }
+  ?>
   
   <?php include('mainheader.php'); ?>
 
@@ -41,44 +61,43 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/dorothea.webp');"
-    data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-          <h1 class="text-white">Dorothea</h1>
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/dorothea.webp');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="text-white">Dorothea</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
+    <div class="container">
       <div class="featured-property-half d-flex">
         <div class="image" style="background-image: url('images/property.webp')"></div>
         <div class="text">
-        <h2>Property Information</h2>
-            <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
-            <ul class="property-list-details mb-5">
-                <li class="text-black">Property Name: <strong class="text-black">Dorothea</strong></li>
-                <li>Total Area: <strong>480 Square Feet</strong></li>
-                <li>Category: <strong>Modern House</strong></li>
-                <li>Price: <strong>₱50,000 per month</strong></li>
-                <li>Features:</li>
-                <li><strong>1 Bedroom Area</strong> 
-                    <ul>
-                        <li>Master Bedroom: 1 queen size bed</li>
-                    </ul>
-                </li>
-                <li><strong>1 Living Area</strong></li>
-                <li><strong>1 Modern Kitchen</strong></li>
-                <li><strong>1 Modern Bathroom</strong></li>
-                <li>Facilities:</li>
-                <li><strong>Water</strong></li>
-                <li><strong>Electricity</strong></li>
-                <li><strong>Wifi</strong></li>
-                <li><strong>Appliances</strong></li>
+          <h2>Property Information</h2>
+          <p class="mb-5">Ideal for individuals or families seeking contemporary living with added convenience.</p>
+          <ul class="property-list-details mb-5">
+            <li class="text-black">Property Name: <strong class="text-black">Dorothea</strong></li>
+            <li>Total Area: <strong>480 Square Feet</strong></li>
+            <li>Category: <strong>Modern House</strong></li>
+            <li>Price: <strong>₱50,000 per month</strong></li>
+            <li>Features:</li>
+            <li><strong>1 Bedroom Area</strong>
+              <ul>
+                <li>Master Bedroom: 1 queen size bed</li>
+              </ul>
+            </li>
+            <li><strong>1 Living Area</strong></li>
+            <li><strong>1 Modern Kitchen</strong></li>
+            <li><strong>1 Modern Bathroom</strong></li>
+            <li>Facilities:</li>
+            <li><strong>Water</strong></li>
+            <li><strong>Electricity</strong></li>
+            <li><strong>Wifi</strong></li>
+            <li><strong>Appliances</strong></li>
           </ul>
-          <p><a href="pay_method.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+          <p><a href="?rent=true&id=1" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>
@@ -123,7 +142,6 @@
             </a>
           </div>
 
-
           <div class="col-md-6 col-lg-3 mb-5" data-aos="fade-up" data-aos-delay="100">
             <a href="dorothea.php" class="unit-9">
               <div class="image" style="background-image: url('images/property.webp');"></div>
@@ -154,12 +172,10 @@
             </a>
           </div>
 
-          
         </div>
       </div>
     </div>
 
-    
     <div class="bg-primary" data-aos="fade">
       <div class="container">
         <div class="row">
@@ -173,9 +189,7 @@
       </div>
     </div>
 
-    
     <?php include('footer2.php'); ?>
-  </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -190,7 +204,6 @@
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/circleaudioplayer.js"></script>
-
   <script src="js/main.js"></script>
 
   </body>

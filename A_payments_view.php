@@ -4,7 +4,6 @@ include 'connection.php';
 $id = $_GET['id'];
 $query = "SELECT p.id, u.name, r.roomName, p.paymentDueDate, p.paymentAmount, p.paymentStatus
           FROM payments p
-          INNER JOIN users u ON p.userId = u.id
           INNER JOIN rooms r ON p.roomId = r.id
           WHERE p.id = :id";
 
