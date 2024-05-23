@@ -62,7 +62,7 @@
     <li class="text-black">Property Name: <strong class="text-black">Emily</strong></li>
     <li>Total Area: <strong>680 Square Feet</strong></li>
     <li>Category: <strong>Modern House</strong></li>
-    <li>Price: <strong>$100,000 per month</strong></li>
+    <li>Price: <strong>$1715.36 per month</strong></li>
     <li>Features:</li>
     <li><strong>2 Bedroom Areas</strong> 
         <ul>

@@ -53,7 +53,6 @@ if (isset($_SESSION['username'])) {
                     <i class="fa-solid fa-user"></i> <?php  echo htmlspecialchars($name); ?>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="profile.php">Edit Profile</a>
                     <a class="dropdown-item" href="logout.php">Log out</a>
                 </div>
             </div></li>

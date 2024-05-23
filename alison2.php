@@ -62,7 +62,7 @@
                 <li class="text-black">Property Name: <strong class="text-black">Alison</strong></li>
                 <li>Total Area: <strong>480 Square Feet</strong></li>
                 <li>Category: <strong>Modern House</strong></li>
-                <li>Price: <strong>₱50,000 per month</strong></li>
+                <li>Price: <strong>$857.68 per month</strong></li>
                 <li>Features:</li>
                 <li><strong>1 Bedroom Area</strong> 
                     <ul>
@@ -78,7 +78,7 @@
                 <li><strong>Wifi</strong></li>
                 <li><strong>Appliances</strong></li>
           </ul>
-          <p><a href="payment.php" class="btn btn-primary px-4 py-3">Rent</a></p>
+          <p><a href="pay_method.php" class="btn btn-primary px-4 py-3">Rent</a></p>
         </div>
       </div>
     </div>
