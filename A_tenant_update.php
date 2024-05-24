@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phoneNumber = $_POST['phoneNumber'];
 
     // Update user
-    $sql = "UPDATE users SET name = :name, WHERE id = (SELECT userId FROM tenants WHERE id = :id)";
+    $sql = "UPDATE users SET name = :name WHERE id = (SELECT userId FROM tenants WHERE id = :id)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':id', $id);

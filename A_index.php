@@ -17,7 +17,7 @@ function fetchData($sql) {
     }
 }
 
-$sql1 = "SELECT COUNT(*) AS total_rooms FROM rooms";
+$sql1 = "SELECT COUNT(*) AS total_rooms FROM rooms WHERE Status = 'Available'";
 $sql2 = "SELECT COUNT(*) AS total_tenants FROM tenants";
 $sql3 = "SELECT COUNT(*) AS total_duedate FROM payments";
 $sql4 = "SELECT COUNT(*) AS total_requests FROM requests";
