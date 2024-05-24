@@ -146,7 +146,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
                 <a href="A_payments.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa-solid fa-credit-card fs-6 primary-text4 rounded-full secondary-bg p-1"></i> Payments</a>
                 <a href="A_edit.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fa-regular fa-pen-to-square fs-6 primary-text5 rounded-full secondary-bg p-1"></i> Edit</a>
+                        class="fa-regular fa-pen-to-square fs-6 primary-text5 rounded-full secondary-bg p-1"></i> Data Visualization</a>
                 <a href="A_concern.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa-regular fa-comment-dots fs-6 primary-text6 rounded-full secondary-bg p-1"></i> Concern/Request</a>
                 <a href="A_recycle_bin.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
