@@ -2,26 +2,33 @@
 include 'connection.php';
 session_start();
 
-// Base query to select tenant information
-$query = "SELECT p.id, u.name, r.roomName, p.paymentDueDate, p.paymentAmount, p.paymentStatus
+// Base query to select payment information with JOIN to users table
+$query = "SELECT p.id, u.name, r.roomName, p.paymentAmount, p.paymentDueDate, p.paymentStatus
           FROM payments p
-          INNER JOIN users u ON p.userId = u.id
-          INNER JOIN rooms r ON p.roomId = r.id";
+          INNER JOIN rooms r ON p.roomId = r.id
+          INNER JOIN users u ON p.userId = u.id";
 
 // Check if there is a search term and update the query accordingly
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 if (!empty($search)) {
-    $query .= " WHERE u.name LIKE '%$search%' OR r.roomName LIKE '%$search%' OR p.paymentDueDate LIKE '%$search%' OR p.paymentAmount LIKE '%$search%' OR p.paymentStatus LIKE '%$search%'";
+    $query .= "WHERE p.name LIKE '%$search%' OR r.roomName LIKE '%$search%' OR p.paymentDueDate LIKE '%$search%' OR p.paymentAmount LIKE '%$search%' OR p.paymentStatus LIKE '%$search%'";
 }
 
-// Prepare and execute the query
-$stmt = $conn->prepare($query);
-$stmt->execute();
-$payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// Sort the payments by payment due date in descending order
+$query .= " ORDER BY p.paymentDueDate DESC";
+
+try {
+    // Prepare and execute the query
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+    die();
+}
 
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

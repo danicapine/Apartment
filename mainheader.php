@@ -47,6 +47,7 @@ if (isset($_SESSION['username'])) {
               <li <?php if(basename($_SERVER['PHP_SELF']) == 'homepage2.php') echo 'class="active"'; ?>><a href="homepage2.php">Home</a></li>
               <li <?php if(basename($_SERVER['PHP_SELF']) == 'aboutpage2.php') echo 'class="active"'; ?>><a href="aboutpage2.php">About</a></li>
               <li <?php if(basename($_SERVER['PHP_SELF']) == 'rooms2.php') echo 'class="active"'; ?>><a href="rooms2.php">Rooms</a></li>
+              <li <?php if(basename($_SERVER['PHP_SELF']) == 'status.php') echo 'class="active"'; ?>><a href="status.php">Rent details</a></li>
               <li <?php if(basename($_SERVER['PHP_SELF']) == 'contact2.php') echo 'class="active"'; ?>><a href="contact2.php">Contact</a></li>
               <li><div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
