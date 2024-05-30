@@ -22,6 +22,7 @@ $payments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'user';
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
